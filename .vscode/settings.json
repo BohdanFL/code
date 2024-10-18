@@ -1,4 +1,16 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[razor]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.includeLanguages": {
+        "aspnetcorerazor": "html"
+    },
+    "files.associations": {
+        "*.cshtml": "html"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    }
 }

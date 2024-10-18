@@ -1,15 +1,30 @@
 {
-  "devDependencies": {
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,scss,html,cshtml}": [
-      "prettier --write"
-    ],
-    "*.{cs}": [
-      "dotnet format ./code.sln"
-    ]
-  }
+    "name": "code",
+    "version": "0.0.1",
+    "description": "[![Shared Build Status](https://dev.azure.com/investec/maas/_apis/build/status/shared?repoName=maas)](https://dev.azure.com/investec/maas/_build/latest?definitionId=1128&repoName=maas)",
+    "dependencies": {
+        "husky": "^9.1.6"
+    },
+    "devDependencies": {
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,css,scss,html,cshtml}": [
+            "prettier --write"
+        ],
+        "*.cs": "dotnet format code.sln --include "
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bohdanfl/code.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
