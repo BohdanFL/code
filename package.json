@@ -5,8 +5,11 @@
     "prettier": "^3.3.3"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,html,cshtml}": [
+    "*.{js,jsx,ts,tsx,css,scss,html,cshtml}": [
       "prettier --write"
+    ],
+    "*.{cs}": [
+      "dotnet format ./code.sln"
     ]
   }
 }
